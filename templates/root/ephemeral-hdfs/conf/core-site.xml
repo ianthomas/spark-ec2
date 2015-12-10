@@ -12,12 +12,12 @@
 
   <property>
     <name>fs.default.name</name>
-    <value>hdfs://{{active_master}}:9000</value>
+    <value>hdfs://{{active_master}}:9010</value>
   </property>
 
   <property>
     <name>fs.defaultFS</name>
-    <value>hdfs://{{active_master}}:9000</value>
+    <value>hdfs://{{active_master}}:9010</value>
   </property>
 
   <property>
