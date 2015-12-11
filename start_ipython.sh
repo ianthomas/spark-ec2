@@ -47,7 +47,7 @@ echo $MASTER
 
 # --packages com.databricks:spark-csv_2.10:1.1.0 --master spark://spark_master_hostname:7077 --executor-memory 6400M --driver-memory 6400M
 # /root/spark/bin/pyspark --master $MASTER --packages com.databricks:spark-csv_2.10:1.1.0 --total-executor-cores 3 --executor-memory 5024m > /var/log/pyspark.log &
-nohup /root/spark/bin/pyspark --master $MASTER --packages com.databricks:spark-csv_2.10:1.1.0,com.databricks:spark-avro_2.10:2.0.1 --total-executor-cores 3 --executor-memory 6024m >> /var/log/python_notebook.log &
+nohup /root/spark/bin/pyspark --master $MASTER --packages com.databricks:spark-csv_2.10:1.1.0,com.databricks:spark-avro_2.10:2.0.1 --total-executor-cores 8 --executor-memory 14024m >> /var/log/python_notebook.log &
 echo "Ipython Notebook Started."
 echo "Be sure to turn on port forwarding"
 echo "ssh -i ~/.ssh/emr_spark.pem -ND 8157 root@"$SPARK_MASTER_IP
